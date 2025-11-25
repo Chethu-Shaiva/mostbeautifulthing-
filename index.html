@@ -335,10 +335,11 @@
       loadingText.style.fontSize = `${baseSize * 1.5}px`;
     }
 
-    paymentBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      startExperience();
-    });
+paymentBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.location.href = "https://rzp.io/rzp/LfWMhQ3g"; // your payment link
+});
+
 
     function startExperience() {
       landingScreen.classList.add('fade-out');
