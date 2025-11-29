@@ -292,7 +292,6 @@
     const container = document.getElementById('container');
     const landingScreen = document.getElementById('landingScreen');
     const mirrorScreen = document.getElementById('mirrorScreen');
-    const paymentBtn = document.getElementById('paymentBtn');
     const loadingText = document.getElementById('loadingText');
     const revealText = document.getElementById('revealText');
     const secretMessage = document.getElementById('secretMessage');
@@ -346,11 +345,6 @@
 
       loadingText.style.fontSize = `${baseSize * 1.5}px`;
     }
-
-    paymentBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      startExperience();
-    });
 
     function startExperience() {
       landingScreen.classList.add('fade-out');
